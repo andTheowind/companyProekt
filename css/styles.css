@@ -1,0 +1,156 @@
+
+
+nav:first-child {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	margin: 30px 28px 16px 32px;
+}
+nav .mb-2, .my-2 {
+    margin-bottom: 0 !important;
+}
+nav form {
+	display: flex;
+}
+nav .form-control, nav .btn {
+	border-radius: 10px;
+}
+nav .form-control {
+	width: 217px ;
+	background-color: #333333 ;
+	height: 32px ;
+	margin-right: 3px;
+}
+nav .btn {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #3bafbe;
+}
+nav .form-control::placeholder, nav .btn-info {
+	font-family: 'Georgia';
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+nav .form-control:active, nav .form-control:focus {
+	background-color: #333333;
+	color: #ffffff;
+}
+.navbar a:first-child:hover {
+	text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-nav,
+.mr-auto {
+  	flex: 1;
+  	margin: auto !important;
+  	display: flex;
+  	justify-content: flex-end;
+}
+.navbar-nav li { 
+	margin-left: 25px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #999999;
+	font-weight: 600;
+}
+.navbar-nav .home {
+	color: #3bafbe !important;
+}
+header nav {
+	margin: 0 15px;
+}
+header nav h2 {
+  	font-family: 'Georgia';
+  	font-size: 26px;
+  	line-height: 1;
+  	color: #4a4a4a;
+  	margin-bottom: 0;
+}
+header nav h2 > span {
+	font-size: 33px;
+	color: #4a4a4a;
+}
+header nav span {
+	font-family: 'Georgia';
+	font-size: 12px;
+	line-height: 1;
+	color: #999999;
+}
+.navbar-nav {
+	font-family: 'Georgia';
+	font-size: 13px;
+	line-height: 1;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+    	padding-right: 0; 
+    	padding-left: 1rem;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.monitor {
+		margin: 0 auto;
+	}
+	.col-md-8 {
+		width: 66.666667%;
+	}	
+	.col-md-4 {
+		flex: 0 0 33.333333%;
+    	width: 33.333333%;
+	}
+	.title {
+		padding: 0 0 50px 0; 
+	}
+	.slider {
+		flex-direction: column;
+	}
+	.monitor {
+		padding-bottom: 35px;
+	}
+	.soc-icons div {
+		margin: 0 8px 0 0;
+	}
+}
+@media screen and (max-width: 576px) {
+
+	.card {
+		margin: 0 auto;
+	}
+	nav .form-control {
+		width: 190px;
+	}
+	.title h1 {
+		margin-top: 0;
+		font-size: 32px;
+	}
+	footer input {
+		max-width: 235px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 540px) {
+	header nav form {
+		display: none;
+	}
+	.soc-icons div {
+		margin: 0 5px 0 0;
+	}
+	nav .form-control {
+		width: 170px;
+	}
+	.btn {
+		padding: .375rem .35rem;
+	}
+	.modal-body {
+		flex-direction: column;
+	}
+}
